@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jelajahi pesona wisata alam dan agrowisata terbaik di Batu Malang bersama agen travel profesional dan terpercaya. Pesan paket tour Anda sekarang!">
+    <meta name="keywords" content="Travel Batu Malang, Wisata Batu, Paket Tour Malang, Agen Travel Malang, Wisata Bromo">
+    <title>Travel Batu Malang - Jelajahi Pesona Wisata Alam & Agrowisata</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#4CAF50">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.batumalangtravel.com/">
+    <meta property="og:title" content="Travel Batu Malang - Jelajahi Pesona Wisata">
+    <meta property="og:description" content="Jelajahi pesona wisata alam dan agrowisata terbaik di Batu Malang bersama agen travel profesional.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=1200&q=80">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Travel Batu Malang - Jelajahi Pesona Wisata">
+    <meta property="twitter:description" content="Pesan paket tour Bromo dan Batu Malang Anda sekarang. Harga kompetitif dan pelayanan profesional.">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "BatuMalang Travel",
+      "image": "https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=1200&q=80",
+      "description": "Agen perjalanan wisata profesional melayani paket tour Batu, Malang, dan Gunung Bromo.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Raya Oro-oro Ombo No. 12",
+        "addressLocality": "Kota Batu",
+        "addressRegion": "Jawa Timur",
+        "postalCode": "65316",
+        "addressCountry": "ID"
+      },
+      "telephone": "+6281234567890",
+      "url": "https://www.batumalangtravel.com/"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=1920&q=80" as="image">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* --- Root & Variabel Warna Tema Cerah --- */
+        :root {
+            --bg-main: #F9FBF9;       
+            --primary-color: #4CAF50;  
+            --primary-dark: #2E7D32;   
+            --secondary-color: #03A9F4;
+            --accent-color: #FFC107;   
+            --text-color: #333333;     
+            --text-light: #ffffff;
+            --text-muted: #666666;
+            --footer-bg: #E8F5E9; 
+            --font-family: 'Inter', sans-serif;
+            --navbar-height: 70px;
+        }
+
+        /* --- Reset Dasar & OPTIMASI ANTI GOYANG --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        /* Tambahan width: 100% dan margin/padding 0 untuk mencegah horizontal scroll di mobile */
+        html, body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-family); 
+            background-color: var(--bg-main);
+            color: var(--text-color); 
+            line-height: 1.6; 
+            overflow-x: hidden; 
+            scroll-behavior: smooth;
+        }
+        
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        img { max-width: 100%; height: auto; display: block; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .section-header { text-align: center; margin-bottom: 50px; }
+        .section-header h2 { font-size: 2.2rem; color: var(--primary-dark); margin-bottom: 10px; }
+        .section-header p { color: var(--text-muted); font-size: 1.1rem; }
+
+        /* --- Navigasi (Scroll Up Sticky) --- */
+        .navbar-container {
+            position: fixed; top: 0; left: 0; width: 100%; height: var(--navbar-height);
+            background-color: rgba(255, 255, 255, 0.95); box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            z-index: 1000; transition: top 0.3s ease-in-out; backdrop-filter: blur(5px);
+        }
+        .navbar {
+            max-width: 1200px; height: 100%; margin: 0 auto; display: flex; 
+            justify-content: space-between; align-items: center; padding: 0 20px;
+        }
+        .nav-logo a { display: flex; align-items: center; font-size: 1.4rem; font-weight: 700; color: var(--primary-dark); }
+        .logo-icon { margin-right: 8px; color: var(--secondary-color); }
+        .nav-logo span span { color: var(--secondary-color); }
+        .nav-links { display: flex; gap: 30px; }
+        .nav-links a { font-weight: 500; padding: 5px 0; transition: color 0.3s; position: relative; }
+        .nav-links a:hover, .nav-links a.active { color: var(--primary-color); }
+        .nav-links a::after {
+            content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px;
+            background-color: var(--primary-color); transition: width 0.3s;
+        }
+        .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+        .menu-toggle { display: none; background: none; border: none; font-size: 1.5rem; color: var(--text-color); cursor: pointer; }
+
+        /* --- Hero Section --- */
+        .hero {
+            position: relative; height: 100vh; min-height: 550px;
+            background: url('image/hero-index.webp') no-repeat center center/cover;
+            display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 20px;
+        }
+        .hero-content { position: relative; z-index: 10; max-width: 800px; color: var(--text-light); text-shadow: 2px 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5); }
+        .hero-content h1 { font-size: 3.2rem; font-weight: 700; margin-bottom: 20px; line-height: 1.2; }
+        .hero-content p { font-size: 1.25rem; margin-bottom: 35px; }
+
+        /* Tombol */
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center; padding: 12px 30px; 
+            font-weight: 600; border-radius: 30px; transition: all 0.3s ease; cursor: pointer; border: none; text-align: center; text-shadow: none;
+        }
+        .btn-cta { background-color: var(--accent-color); color: #333; box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4); }
+        .btn-cta:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(255, 193, 7, 0.6); background-color: #ffca28; }
+        .btn-outline { border: 2px solid var(--primary-color); color: var(--primary-color); padding: 8px 20px; background: transparent; border-radius: 20px;}
+        .btn-outline:hover { background-color: var(--primary-color); color: var(--text-light); }
+        .btn-outline i { margin-right: 6px; }
+
+        /* --- Keunggulan Section --- */
+        .keunggulan-section { padding: 80px 0 60px; background-color: #fff; border-bottom: 1px solid #eee;}
+        .grid-keunggulan { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; text-align: center; }
+        .k-item i { font-size: 2.5rem; color: var(--secondary-color); margin-bottom: 15px; }
+        .k-item h3 { font-size: 1.2rem; margin-bottom: 10px; color: var(--primary-dark); }
+        .k-item p { font-size: 0.95rem; color: var(--text-muted); }
+
+        /* --- Paket Travel --- */
+        .paket-section { padding: 80px 0; }
+        .grid-paket { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .card-paket {
+            background: #fff; border-radius: 16px; overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: transform 0.3s;
+            border: 1px solid #f0f0f0;
+        }
+        .card-paket:hover { transform: translateY(-8px); }
+        .card-paket-img { width: 100%; height: 220px; object-fit: cover; }
+        .card-paket-body { padding: 25px; }
+        .badge {
+            display: inline-block; padding: 5px 12px; background-color: var(--footer-bg); color: var(--primary-dark);
+            font-size: 0.85rem; font-weight: 600; border-radius: 20px; margin-bottom: 15px;
+        }
+        .card-paket-body h3 { font-size: 1.4rem; margin-bottom: 10px; color: #222; }
+        .card-paket-body p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px; }
+        .card-paket-footer {
+            display: flex; justify-content: space-between; align-items: center;
+            padding-top: 15px; border-top: 1px solid #eee;
+        }
+        .harga { font-weight: 700; font-size: 1.2rem; color: var(--secondary-color); }
+
+        /* --- Galeri --- */
+        .galeri-section { padding: 80px 0; background-color: #ffffff; }
+        .grid-galeri { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+        .galeri-item { border-radius: 12px; overflow: hidden; position: relative; height: 250px; }
+        .galeri-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+        .galeri-item:hover img { transform: scale(1.1); }
+
+        /* --- FAQ Section --- */
+        .faq-section { padding: 80px 0 40px; }
+        .faq-container { max-width: 800px; margin: 0 auto; }
+        .faq-item {
+            background-color: #fff; border-radius: 10px; margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03); border: 1px solid #eaeaea; overflow: hidden;
+        }
+        .faq-item summary {
+            padding: 20px; font-weight: 600; cursor: pointer; color: var(--primary-dark);
+            list-style: none; display: flex; justify-content: space-between; align-items: center;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after { content: '\f078'; font-family: "Font Awesome 6 Free"; font-weight: 900; color: var(--secondary-color); transition: transform 0.3s; }
+        .faq-item[open] summary::after { transform: rotate(180deg); }
+        .faq-item p { padding: 0 20px 20px; color: var(--text-muted); font-size: 0.95rem; border-top: 1px solid #f0f0f0; margin-top: 10px; padding-top: 15px;}
+
+        /* --- Artikel / Blog --- */
+        .artikel-section { padding: 40px 0 80px; }
+        .grid-artikel { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card-artikel { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.03); display: flex; flex-direction: column;}
+        .card-artikel img { width: 100%; height: 200px; object-fit: cover; }
+        .card-artikel-body { padding: 20px; display: flex; flex-direction: column; flex-grow: 1; }
+        .meta-date { font-size: 0.85rem; color: var(--secondary-color); margin-bottom: 8px; display: block; }
+        .card-artikel-body h3 { font-size: 1.2rem; margin-bottom: 10px; color: var(--text-color); }
+        .card-artikel-body p { color: var(--text-muted); font-size: 0.95rem; flex-grow: 1; margin-bottom: 15px;}
+        
+        /* Tombol Baca Selengkapnya */
+        .btn-readmore { 
+            display: inline-block; font-weight: 600; color: var(--primary-color); font-size: 0.95rem; align-self: flex-start;
+        }
+        .btn-readmore:hover { color: var(--primary-dark); }
+        .btn-readmore i { margin-left: 5px; transition: transform 0.3s; }
+        .btn-readmore:hover i { transform: translateX(5px); }
+
+        /* --- Banner CTA Baru --- */
+        .cta-container { padding: 0 20px 80px; max-width: 1200px; margin: 0 auto; }
+        .banner-cta {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            border-radius: 24px; padding: 50px 60px; display: flex; justify-content: space-between;
+            align-items: center; color: white; box-shadow: 0 15px 40px rgba(76, 175, 80, 0.2);
+            position: relative; overflow: hidden;
+        }
+        .banner-cta::after {
+            content: ''; position: absolute; right: -50px; bottom: -50px; width: 200px; height: 200px;
+            background: var(--secondary-color); opacity: 0.2; border-radius: 50%;
+        }
+        .banner-cta-text h2 { font-size: 2.2rem; margin-bottom: 10px; z-index: 2; position: relative;}
+        .banner-cta-text p { font-size: 1.1rem; opacity: 0.9; max-width: 500px; z-index: 2; position: relative;}
+        .banner-cta .btn { background-color: var(--accent-color); color: #333; z-index: 2; position: relative; padding: 15px 35px; font-size: 1.1rem;}
+
+        /* --- Footer (4 Kolom, Warna Beda) --- */
+        footer { background-color: var(--footer-bg); padding: 70px 0 20px 0; border-top: 1px solid #dcf0df; }
+        
+        .footer-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+            gap: 40px; 
+            margin-bottom: 40px; 
+            align-items: start; 
+        }
+        
+        .footer-col h4 { font-size: 1.2rem; color: var(--primary-dark); margin-bottom: 20px; }
+        
+        /* Jarak antar baris disamakan (15px) agar rapih sejajar */
+        .footer-col p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px; line-height: 1.6; }
+        .footer-links li { margin-bottom: 15px; color: var(--text-muted); }
+        .footer-links a { color: var(--text-muted); transition: color 0.3s; }
+        .footer-links a:hover { color: var(--primary-color); }
+        
+        .footer-contact li { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 15px; color: var(--text-muted); font-size: 0.95rem; }
+        .footer-contact i { color: var(--secondary-color); margin-top: 4px; }
+        
+        /* Ikon Sosial Media di Footer */
+        .footer-social { display: flex; gap: 15px; margin-top: 5px; } 
+        .footer-social a {
+            display: inline-flex; justify-content: center; align-items: center;
+            width: 35px; height: 35px; background-color: rgba(76, 175, 80, 0.15);
+            color: var(--primary-dark); border-radius: 50%; transition: all 0.3s ease;
+        }
+        .footer-social a:hover { background-color: var(--primary-color); color: #fff; transform: translateY(-3px); }
+
+        .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #c8e6c9; color: #777; font-size: 0.9rem; }
+
+        /* --- Floating Elements --- */
+        .floating-container { position: fixed; bottom: 25px; right: 25px; display: flex; flex-direction: column; gap: 12px; z-index: 999; }
+        .btn-floating {
+            width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 1.6rem; color: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.15); cursor: pointer; border: none;
+            transition: transform 0.3s, opacity 0.3s, visibility 0.3s;
+        }
+        .btn-floating:hover { transform: scale(1.1); }
+        .btn-wa { background-color: #25D366; }
+        .btn-top { background-color: var(--secondary-color); opacity: 0; visibility: hidden; }
+        .btn-top.show { opacity: 1; visibility: visible; }
+
+        /* --- Media Queries --- */
+        @media (max-width: 900px) {
+            .banner-cta { flex-direction: column; text-align: center; padding: 40px 30px; gap: 30px; }
+            .banner-cta-text p { margin: 0 auto; }
+        }
+        
+        @media (max-width: 768px) {
+            .menu-toggle { display: block; }
+            .nav-links {
+                position: absolute; top: var(--navbar-height); left: 0; width: 100%; background-color: #ffffff;
+                flex-direction: column; gap: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+                max-height: 0; overflow: hidden; transition: max-height 0.3s ease-in-out;
+            }
+            .nav-links.active { max-height: 250px; }
+            .nav-links li { width: 100%; text-align: center; }
+            .nav-links a { display: block; padding: 16px 0; border-bottom: 1px solid rgba(0,0,0,0.02); }
+            .nav-links a::after { display: none; }
+            .hero-content h1 { font-size: 2.2rem; }
+            
+            /* Penyesuaian Card ke-3 agar harga dan tombol tetap 1 baris di mobile */
+            .grid-paket .card-paket:nth-child(3) .card-paket-footer {
+                gap: 5px;
+            }
+            .grid-paket .card-paket:nth-child(3) .harga {
+                font-size: 1rem;
+            }
+            .grid-paket .card-paket:nth-child(3) .btn-outline {
+                padding: 6px 12px;
+                font-size: 0.85rem;
+            }
+
+            /* Penyesuaian Footer rata tengah untuk Mobile */
+            footer { text-align: center; }
+            .footer-col { display: flex; flex-direction: column; align-items: center; }
+            .footer-social { justify-content: center; margin-top: 10px; }
+            .footer-contact li { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar-container">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <i class="fa-solid fa-compass logo-icon"></i>
+                    <span>BatuMalang<span>Travel</span></span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Buka Menu Navigasi">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Jelajahi Pesona Batu Malang Bersama Kami</h1>
+                <p>Nikmati perjalanan tak terlupakan mengeksplorasi keindahan alam pegunungan, udara sejuk, dan kesegaran agrowisata kebun apel.</p>
+                <a href="#paket" class="btn btn-cta">Lihat Paket Wisata</a>
+            </div>
+        </section>
+
+        <section class="keunggulan-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Mengapa Memilih Kami?</h2>
+                    <p>Alasan terbaik untuk mempercayakan momen liburan berharga Anda bersama agen kami</p>
+                </div>
+                <div class="grid-keunggulan">
+                    <div class="k-item">
+                        <i class="fa-solid fa-tags"></i>
+                        <h3>Harga Kompetitif</h3>
+                        <p>Penawaran paket wisata terbaik yang pas di kantong tanpa mengurangi fasilitas.</p>
+                    </div>
+                    <div class="k-item">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <h3>Pemandu Profesional</h3>
+                        <p>Ditemani oleh kru dan guide lokal yang ramah, berpengalaman, dan informatif.</p>
+                    </div>
+                    <div class="k-item">
+                        <i class="fa-solid fa-car"></i>
+                        <h3>Armada Nyaman</h3>
+                        <p>Kendaraan prima, bersih, dan ber-AC yang dijamin keamanannya selama tour.</p>
+                    </div>
+                    <div class="k-item">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <h3>Jadwal Fleksibel</h3>
+                        <p>Rute perjalanan bisa disesuaikan dengan kebutuhan liburan keluarga Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="paket-section" id="paket">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Pilihan Paket Wisata</h2>
+                    <p>Temukan paket perjalanan terbaik yang dirancang khusus untuk Anda</p>
+                </div>
+                
+                <div class="grid-paket">
+                    <div class="card-paket">
+                        <img src="image/paket-batu.webp" alt="Kebun Apel Batu" class="card-paket-img" loading="lazy">
+                        <div class="card-paket-body">
+                            <span class="badge">1 Hari (City Tour)</span>
+                            <h3>Eksplorasi Kota Batu</h3>
+                            <p>Kunjungi destinasi wajib: Petik Apel, Jatim Park 2, dan Alun-alun Kota Batu yang ikonis.</p>
+                            <div class="card-paket-footer">
+                                <span class="harga">Rp 350.000<small>/pax</small></span>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20tertarik%20untuk%20pesan%20Paket%20Eksplorasi%20Kota%20Batu%20(1%20Hari)" target="_blank" rel="noopener noreferrer" class="btn-outline" aria-label="Pesan Paket Eksplorasi Kota Batu"><i class="fa-brands fa-whatsapp"></i> Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-paket">
+                        <img src="image/paket-bromo.webp" alt="Bromo Tengger" class="card-paket-img" loading="lazy">
+                        <div class="card-paket-body">
+                            <span class="badge">2 Hari 1 Malam</span>
+                            <h3>Bromo & Batu Sunrise</h3>
+                            <p>Kejar momen matahari terbit di Bromo, dilanjutkan dengan wisata rekreasi di Kota Batu.</p>
+                            <div class="card-paket-footer">
+                                <span class="harga">Rp 850.000<small>/pax</small></span>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20tertarik%20untuk%20pesan%20Paket%20Bromo%20%26%20Batu%20Sunrise%20(2H1M)" target="_blank" rel="noopener noreferrer" class="btn-outline" aria-label="Pesan Paket Bromo & Batu Sunrise"><i class="fa-brands fa-whatsapp"></i> Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-paket">
+                        <img src="image/paket-museum.webp" alt="Museum Angkut" class="card-paket-img" loading="lazy">
+                        <div class="card-paket-body">
+                            <span class="badge">3 Hari 2 Malam</span>
+                            <h3>Paket Keluarga Ceria</h3>
+                            <p>Liburan lengkap: Museum Angkut, Coban Rondo, Petik Strawberry, dan wisata kuliner.</p>
+                            <div class="card-paket-footer">
+                                <span class="harga">Rp 1.450.000<small>/pax</small></span>
+                                <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20tertarik%20untuk%20pesan%20Paket%20Keluarga%20Ceria%20(3H2M)" target="_blank" rel="noopener noreferrer" class="btn-outline" aria-label="Pesan Paket Keluarga Ceria"><i class="fa-brands fa-whatsapp"></i> Pesan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="galeri-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Galeri Perjalanan</h2>
+                    <p>Momen-momen indah dari para wisatawan kami</p>
+                </div>
+                <div class="grid-galeri">
+                    <div class="galeri-item">
+                        <img src="image/galeri-satu.webp" alt="Wisatawan menikmati pemandangan alam Batu" loading="lazy">
+                    </div>
+                    <div class="galeri-item">
+                        <img src="image/galeri-dua.webp" alt="Spot foto Instagramable di wisata Malang" loading="lazy">
+                    </div>
+                    <div class="galeri-item">
+                        <img src="image/galeri-tiga.webp" alt="Suasana pegunungan yang sejuk di pagi hari" loading="lazy">
+                    </div>
+                    <div class="galeri-item">
+                        <img src="image/galeri-empat.webp" alt="Keluarga bahagia berlibur di Jatim Park" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="faq-container">
+                <div class="section-header">
+                    <h2>Pertanyaan yang Sering Diajukan</h2>
+                    <p>Temukan jawaban cepat untuk pertanyaan seputar layanan kami</p>
+                </div>
+                
+                <details class="faq-item">
+                    <summary>Apa saja yang sudah termasuk dalam harga paket tour?</summary>
+                    <p>Harga paket kami umumnya sudah meliputi transportasi (BBM & Sopir), tiket masuk wisata sesuai itinerary, air mineral, parkir, dan retribusi wisata. Untuk paket tertentu juga meliputi hotel dan makan (silakan cek detail tiap paket).</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Apakah saya bisa mengubah itinerary (rute) perjalanan?</summary>
+                    <p>Sangat bisa! Kami menyediakan layanan "Private Tour" dimana rute perjalanan sangat fleksibel dan bisa disesuaikan sepenuhnya dengan keinginan destinasi dan ritme liburan Anda.</p>
+                </details>
+                
+                <details class="faq-item">
+                    <summary>Bagaimana prosedur pembayaran dan pembatalannya?</summary>
+                    <p>Pembayaran dilakukan dengan DP (Down Payment) sebesar 30% dari total tagihan sebagai tanda jadi, sisanya dilunasi saat hari H penjemputan. Pembatalan H-3 akan dikenakan potongan biaya sesuai kebijakan perusahaan.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="artikel-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Artikel & Info Wisata</h2>
+                    <p>Tips liburan dan kabar terbaru seputar pariwisata Batu Malang</p>
+                </div>
+                <div class="grid-artikel">
+                    <article class="card-artikel">
+                        <img src="image/bromo.webp" alt="Orang memakai jaket tebal di Gunung Bromo" loading="lazy">
+                        <div class="card-artikel-body">
+                            <span class="meta-date">12 Mei 2026</span>
+                            <h3>5 Barang Wajib Bawa Saat Liburan ke Bromo</h3>
+                            <p>Suhu di Bromo bisa sangat dingin. Pastikan Anda membawa perlengkapan ini agar liburan tetap nyaman dari awal hingga akhir.</p>
+                            <a href="5-barang-wajib.html" class="btn-readmore">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="card-artikel">
+                        <img src="image/jenis-makanan.jpg" alt="Sajian kuliner khas Malang di malam hari" loading="lazy">
+                        <div class="card-artikel-body">
+                            <span class="meta-date">28 April 2026</span>
+                            <h3>Rekomendasi Kuliner Legendaris di Alun-alun Batu</h3>
+                            <p>Jelajahi kelezatan Pos Ketan Legenda dan berbagai jajanan malam yang menghangatkan suasana kota Batu setelah seharian berkeliling.</p>
+                            <a href="rekomendasi-kuliner.html" class="btn-readmore">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="card-artikel">
+                        <img src="image/batu-secret-zoo.jpg" alt="Pintu masuk wahana rekreasi Jatim Park" loading="lazy">
+                        <div class="card-artikel-body">
+                            <span class="meta-date">10 April 2026</span>
+                            <h3>Panduan Lengkap Memilih Jatim Park 1, 2, atau 3</h3>
+                            <p>Bingung mau ke mana? Kenali perbedaan setiap taman rekreasi agar sesuai dengan kebutuhan dan umur anggota keluarga Anda.</p>
+                            <a href="panduan-jatim-park.html" class="btn-readmore">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <div class="cta-container">
+            <div class="banner-cta">
+                <div class="banner-cta-text">
+                    <h2>Siap Memulai Petualangan Anda?</h2>
+                    <p>Hubungi tim kami sekarang juga untuk mendapatkan penawaran spesial dan layanan konsultasi rute perjalanan gratis tanpa syarat.</p>
+                </div>
+                <a href="https://wa.me/6281234567890" class="btn" aria-label="Hubungi Customer Service via WhatsApp"><i class="fa-brands fa-whatsapp" style="margin-right: 8px;"></i> Hubungi via WA</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>BatuMalang Travel</h4>
+                    <p>Partner perjalanan tepercaya Anda untuk liburan seru, aman, dan nyaman di Kota Batu dan Malang.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Ikuti kami di Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Ikuti kami di Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="Ikuti kami di TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Tonton video kami di YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Layanan Kami</h4>
+                    <ul class="footer-links">
+                        <li>Paket Tour Bromo</li>
+                        <li>City Tour Batu Malang</li>
+                        <li>Sewa Mobil / Elf / Hiace</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Tautan Cepat</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="tentang.html">Tentang Kami</a></li>
+                        <li><a href="blog.html">Blog Wisata</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Hubungi Kami</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-location-dot"></i> Jl. Raya Oro-oro Ombo No. 12, Kota Batu</li>
+                        <li><i class="fa-brands fa-whatsapp"></i> +62 812 3456 7890</li>
+                        <li><i class="fa-regular fa-envelope"></i> halo@batumalangtravel.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Batu Malang Travel. Semua Hak Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-container">
+        <button class="btn-floating btn-top" aria-label="Scroll kembali ke atas halaman">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+        <a href="https://wa.me/6281234567890" class="btn-floating btn-wa" target="_blank" rel="noopener noreferrer" aria-label="Kirim pesan ke kami via WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Mobile Menu
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const icon = menuToggle.querySelector('i');
+                if (navLinks.classList.contains('active')) {
+                    icon.className = 'fa-solid fa-xmark';
+                } else {
+                    icon.className = 'fa-solid fa-bars';
+                }
+            });
+
+            // 2. Scroll Up Sticky Navbar & Floating Top
+            let lastScrollTop = 0;
+            const navbarContainer = document.querySelector('.navbar-container');
+            const navbarHeight = navbarContainer.offsetHeight;
+            const btnTop = document.querySelector('.btn-top');
+            const heroSection = document.querySelector('.hero');
+
+            window.addEventListener('scroll', () => {
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                // Navbar Logic
+                if (scrollTop > lastScrollTop && scrollTop > navbarHeight) {
+                    navbarContainer.style.top = `-${navbarHeight}px`;
+                } else {
+                    navbarContainer.style.top = '0';
+                }
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; 
+
+                // Floating Top Logic
+                if (scrollTop > heroSection.offsetHeight / 2) {
+                    btnTop.classList.add('show');
+                } else {
+                    btnTop.classList.remove('show');
+                }
+            });
+
+            // 3. Scroll to Top
+            btnTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>

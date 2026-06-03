@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kumpulan artikel menarik, panduan liburan, tips travel, dan informasi destinasi wisata terbaru di Batu Malang dan Gunung Bromo.">
+    <meta name="keywords" content="Blog Wisata Malang, Tips Travel Bromo, Info Wisata Batu, Rekomendasi Kuliner Malang, Panduan Jatim Park">
+    <title>Blog & Info Wisata - Travel Batu Malang</title>
+    
+    <!-- ========================================== -->
+    <!-- 1. OPTIMASI FAVICON MAKSIMAL                 -->
+    <!-- ========================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#4CAF50">
+
+    <!-- ========================================== -->
+    <!-- 2. OPTIMASI SEO & AI OVERVIEW (SGE)          -->
+    <!-- ========================================== -->
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="blog">
+    <meta property="og:url" content="https://www.batumalangtravel.com/blog.html">
+    <meta property="og:title" content="Blog & Info Wisata - Travel Batu Malang">
+    <meta property="og:description" content="Temukan tips travel, panduan wisata, dan rekomendasi destinasi terbaik di Batu, Malang, dan Bromo.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=80">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Blog & Info Wisata - Travel Batu Malang">
+    <meta property="twitter:description" content="Temukan tips travel, panduan wisata, dan rekomendasi destinasi terbaik di Batu, Malang, dan Bromo.">
+    
+    <!-- Schema.org JSON-LD (Blog) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Blog Wisata BatuMalang Travel",
+      "description": "Kumpulan artikel, tips, dan panduan lengkap seputar pariwisata di Batu, Malang, dan Bromo.",
+      "url": "https://www.batumalangtravel.com/blog.html",
+      "publisher": {
+        "@type": "TravelAgency",
+        "name": "BatuMalang Travel",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.batumalangtravel.com/logo.png"
+        }
+      }
+    }
+    </script>
+
+    <!-- ========================================== -->
+    <!-- 3. OPTIMASI PAGESPEED (PRELOAD & DNS)        -->
+    <!-- ========================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <!-- Preload Hero Image -->
+    <link rel="preload" href="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1920&q=80" as="image">
+    
+    <!-- Google Fonts (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS Internal -->
+    <style>
+        /* --- Root & Variabel Warna Tema Cerah --- */
+        :root {
+            --bg-main: #F9FBF9;       
+            --primary-color: #4CAF50;  
+            --primary-dark: #2E7D32;   
+            --secondary-color: #03A9F4;
+            --accent-color: #FFC107;   
+            --text-color: #333333;     
+            --text-light: #ffffff;
+            --text-muted: #666666;
+            --footer-bg: #E8F5E9; 
+            --font-family: 'Inter', sans-serif;
+            --navbar-height: 70px;
+        }
+
+        /* --- Reset Dasar & OPTIMASI ANTI GOYANG --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        html, body {
+            width: 100%; margin: 0; padding: 0; font-family: var(--font-family); 
+            background-color: var(--bg-main); color: var(--text-color); 
+            line-height: 1.6; overflow-x: hidden; scroll-behavior: smooth;
+        }
+        
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        img { max-width: 100%; height: auto; display: block; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* --- Navigasi --- */
+        .navbar-container {
+            position: fixed; top: 0; left: 0; width: 100%; height: var(--navbar-height);
+            background-color: rgba(255, 255, 255, 0.95); box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            z-index: 1000; transition: top 0.3s ease-in-out; backdrop-filter: blur(5px);
+        }
+        .navbar { max-width: 1200px; height: 100%; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+        .nav-logo a { display: flex; align-items: center; font-size: 1.4rem; font-weight: 700; color: var(--primary-dark); }
+        .logo-icon { margin-right: 8px; color: var(--secondary-color); }
+        .nav-logo span span { color: var(--secondary-color); }
+        .nav-links { display: flex; gap: 30px; }
+        .nav-links a { font-weight: 500; padding: 5px 0; transition: color 0.3s; position: relative; }
+        .nav-links a:hover, .nav-links a.active { color: var(--primary-color); }
+        .nav-links a::after {
+            content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px;
+            background-color: var(--primary-color); transition: width 0.3s;
+        }
+        .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+        .menu-toggle { display: none; background: none; border: none; font-size: 1.5rem; color: var(--text-color); cursor: pointer; }
+
+        /* --- Hero Section (Khusus Halaman Dalam) --- */
+        .hero-inner {
+            position: relative; height: 50vh; min-height: 400px;
+            background: url('image/page-blog.jpg') no-repeat center center/cover;
+            display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 20px;
+            margin-top: var(--navbar-height);
+        }
+        .hero-inner-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.55); }
+        .hero-inner-content { position: relative; z-index: 10; color: var(--text-light); }
+        .hero-inner-content h1 { font-size: 3rem; font-weight: 700; margin-bottom: 10px; text-shadow: 2px 2px 8px rgba(0,0,0,0.8); }
+        .hero-inner-content p { font-size: 1.2rem; text-shadow: 1px 1px 5px rgba(0,0,0,0.8); }
+
+        /* --- Artikel Section (Persis seperti Index) --- */
+        .artikel-section { padding: 80px 0; background-color: #ffffff; }
+        .section-header { text-align: center; margin-bottom: 50px; }
+        .section-header h2 { font-size: 2.2rem; color: var(--primary-dark); margin-bottom: 10px; }
+        .section-header p { color: var(--text-muted); font-size: 1.1rem; }
+
+        .grid-artikel { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card-artikel { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.03); display: flex; flex-direction: column; border: 1px solid #f0f0f0; transition: transform 0.3s ease, box-shadow 0.3s ease;}
+        .card-artikel:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
+        .card-artikel img { width: 100%; height: 200px; object-fit: cover; }
+        .card-artikel-body { padding: 20px; display: flex; flex-direction: column; flex-grow: 1; }
+        .meta-date { font-size: 0.85rem; color: var(--secondary-color); margin-bottom: 8px; display: block; }
+        .card-artikel-body h3 { font-size: 1.2rem; margin-bottom: 10px; color: var(--text-color); }
+        .card-artikel-body p { color: var(--text-muted); font-size: 0.95rem; flex-grow: 1; margin-bottom: 15px;}
+        
+        /* Tombol Baca Selengkapnya */
+        .btn-readmore { display: inline-block; font-weight: 600; color: var(--primary-color); font-size: 0.95rem; align-self: flex-start; }
+        .btn-readmore:hover { color: var(--primary-dark); }
+        .btn-readmore i { margin-left: 5px; transition: transform 0.3s; }
+        .btn-readmore:hover i { transform: translateX(5px); }
+
+        /* Tombol Umum */
+        .btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 30px; font-weight: 600; border-radius: 30px; transition: all 0.3s ease; cursor: pointer; border: none; text-align: center; }
+
+        /* --- Banner CTA Baru --- */
+        .cta-wrapper { padding: 0 20px 80px; max-width: 1200px; margin: 0 auto; background-color: #ffffff; }
+        .banner-cta { background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); border-radius: 24px; padding: 50px 60px; display: flex; justify-content: space-between; align-items: center; color: white; box-shadow: 0 15px 40px rgba(76, 175, 80, 0.2); position: relative; overflow: hidden; }
+        .banner-cta::after { content: ''; position: absolute; right: -50px; bottom: -50px; width: 200px; height: 200px; background: var(--secondary-color); opacity: 0.2; border-radius: 50%; }
+        .banner-cta-text h2 { font-size: 2.2rem; margin-bottom: 10px; z-index: 2; position: relative;}
+        .banner-cta-text p { font-size: 1.1rem; opacity: 0.9; max-width: 500px; z-index: 2; position: relative;}
+        .banner-cta .btn { background-color: var(--accent-color); color: #333; z-index: 2; position: relative; padding: 15px 35px; font-size: 1.1rem;}
+
+        /* --- Footer --- */
+        footer { background-color: var(--footer-bg); padding: 70px 0 20px 0; border-top: 1px solid #dcf0df; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px; margin-bottom: 40px; align-items: start; }
+        .footer-col h4 { font-size: 1.2rem; color: var(--primary-dark); margin-bottom: 20px; }
+        .footer-col p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px; line-height: 1.6; }
+        .footer-links li { margin-bottom: 15px; color: var(--text-muted); }
+        .footer-links a { color: var(--text-muted); transition: color 0.3s; }
+        .footer-links a:hover { color: var(--primary-color); }
+        .footer-contact li { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 15px; color: var(--text-muted); font-size: 0.95rem; }
+        .footer-contact i { color: var(--secondary-color); margin-top: 4px; }
+        .footer-social { display: flex; gap: 15px; margin-top: 5px; } 
+        .footer-social a { display: inline-flex; justify-content: center; align-items: center; width: 35px; height: 35px; background-color: rgba(76, 175, 80, 0.15); color: var(--primary-dark); border-radius: 50%; transition: all 0.3s ease; }
+        .footer-social a:hover { background-color: var(--primary-color); color: #fff; transform: translateY(-3px); }
+        .footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid #c8e6c9; color: #777; font-size: 0.9rem; }
+
+        /* --- Floating Elements --- */
+        .floating-container { position: fixed; bottom: 25px; right: 25px; display: flex; flex-direction: column; gap: 12px; z-index: 999; }
+        .btn-floating { width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; color: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.15); cursor: pointer; border: none; transition: transform 0.3s, opacity 0.3s, visibility 0.3s; }
+        .btn-floating:hover { transform: scale(1.1); }
+        .btn-wa { background-color: #25D366; }
+        .btn-top { background-color: var(--secondary-color); opacity: 0; visibility: hidden; }
+        .btn-top.show { opacity: 1; visibility: visible; }
+
+        /* --- Media Queries --- */
+        @media (max-width: 900px) {
+            .banner-cta { flex-direction: column; text-align: center; padding: 40px 30px; gap: 30px; }
+            .banner-cta-text p { margin: 0 auto; }
+        }
+        
+        @media (max-width: 768px) {
+            .menu-toggle { display: block; }
+            .nav-links {
+                position: absolute; top: var(--navbar-height); left: 0; width: 100%; background-color: #ffffff;
+                flex-direction: column; gap: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+                max-height: 0; overflow: hidden; transition: max-height 0.3s ease-in-out;
+            }
+            .nav-links.active { max-height: 250px; }
+            .nav-links li { width: 100%; text-align: center; }
+            .nav-links a { display: block; padding: 16px 0; border-bottom: 1px solid rgba(0,0,0,0.02); }
+            .nav-links a::after { display: none; }
+            .hero-inner-content h1 { font-size: 2.2rem; }
+            
+            footer { text-align: center; }
+            .footer-col { display: flex; flex-direction: column; align-items: center; }
+            .footer-social { justify-content: center; margin-top: 10px; }
+            .footer-contact li { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="navbar-container">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <i class="fa-solid fa-compass logo-icon"></i>
+                    <span>BatuMalang<span>Travel</span></span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <!-- Navbar Blog diset Active -->
+                <li><a href="blog.html" class="active">Blog</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Buka Menu Navigasi">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section Khusus Halaman Blog -->
+        <section class="hero-inner">
+            <div class="hero-inner-overlay"></div>
+            <div class="hero-inner-content container">
+                <h1>Blog & Info Wisata</h1>
+                <p>Kumpulan tips, panduan, dan inspirasi liburan terbaik Anda</p>
+            </div>
+        </section>
+
+        <!-- Artikel Section (Sama persis seperti index) -->
+        <section class="artikel-section">
+            <div class="container">
+                <div class="grid-artikel">
+                    <!-- Artikel 1 -->
+                    <article class="card-artikel">
+                        <img src="image/bromo.webp" alt="Orang memakai jaket tebal di Gunung Bromo" loading="lazy">
+                        <div class="card-artikel-body">
+                            <span class="meta-date">12 Mei 2026</span>
+                            <h3>5 Barang Wajib Bawa Saat Liburan ke Bromo</h3>
+                            <p>Suhu di Bromo bisa sangat dingin. Pastikan Anda membawa perlengkapan ini agar liburan tetap nyaman dari awal hingga akhir.</p>
+                            <a href="5-barang-wajib.html" class="btn-readmore">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Artikel 2 -->
+                    <article class="card-artikel">
+                        <img src="image/jenis-makanan.jpg" alt="Sajian kuliner khas Malang di malam hari" loading="lazy">
+                        <div class="card-artikel-body">
+                            <span class="meta-date">28 April 2026</span>
+                            <h3>Rekomendasi Kuliner Legendaris di Alun-alun Batu</h3>
+                            <p>Jelajahi kelezatan Pos Ketan Legenda dan berbagai jajanan malam yang menghangatkan suasana kota Batu setelah seharian berkeliling.</p>
+                            <a href="rekomendasi-kuliner.html" class="btn-readmore">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Artikel 3 -->
+                    <article class="card-artikel">
+                        <img src="image/batu-secret-zoo.jpg" alt="Pintu masuk wahana rekreasi Jatim Park" loading="lazy">
+                        <div class="card-artikel-body">
+                            <span class="meta-date">10 April 2026</span>
+                            <h3>Panduan Lengkap Memilih Jatim Park 1, 2, atau 3</h3>
+                            <p>Bingung mau ke mana? Kenali perbedaan setiap taman rekreasi agar sesuai dengan kebutuhan dan umur anggota keluarga Anda.</p>
+                            <a href="panduan-jatim-park.html" class="btn-readmore">Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner CTA Baru -->
+        <div class="cta-wrapper">
+            <div class="banner-cta">
+                <div class="banner-cta-text">
+                    <h2>Siap Memulai Petualangan Anda?</h2>
+                    <p>Hubungi tim kami sekarang juga untuk mendapatkan penawaran spesial dan layanan konsultasi rute perjalanan gratis tanpa syarat.</p>
+                </div>
+                <a href="https://wa.me/6281234567890" class="btn" aria-label="Hubungi Customer Service via WhatsApp"><i class="fa-brands fa-whatsapp" style="margin-right: 8px;"></i> Hubungi via WA</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Expanded Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>BatuMalang Travel</h4>
+                    <p>Partner perjalanan tepercaya Anda untuk liburan seru, aman, dan nyaman di Kota Batu dan Malang.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Ikuti kami di Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Ikuti kami di Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="Ikuti kami di TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Tonton video kami di YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Layanan Kami</h4>
+                    <ul class="footer-links">
+                        <li>Paket Tour Bromo</li>
+                        <li>City Tour Batu Malang</li>
+                        <li>Sewa Mobil / Elf / Hiace</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Tautan Cepat</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="blog.html">Blog Wisata</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Hubungi Kami</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-location-dot"></i> Jl. Raya Oro-oro Ombo No. 12, Kota Batu</li>
+                        <li><i class="fa-brands fa-whatsapp"></i> +62 812 3456 7890</li>
+                        <li><i class="fa-regular fa-envelope"></i> halo@batumalangtravel.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Batu Malang Travel. Semua Hak Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Elemen Interaktif Melayang -->
+    <div class="floating-container">
+        <button class="btn-floating btn-top" aria-label="Scroll kembali ke atas halaman">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+        <a href="https://wa.me/6281234567890" class="btn-floating btn-wa" target="_blank" rel="noopener noreferrer" aria-label="Kirim pesan ke kami via WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- JavaScript Internal -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Mobile Menu
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const icon = menuToggle.querySelector('i');
+                if (navLinks.classList.contains('active')) {
+                    icon.className = 'fa-solid fa-xmark';
+                } else {
+                    icon.className = 'fa-solid fa-bars';
+                }
+            });
+
+            // 2. Scroll Up Sticky Navbar & Floating Top
+            let lastScrollTop = 0;
+            const navbarContainer = document.querySelector('.navbar-container');
+            const navbarHeight = navbarContainer.offsetHeight;
+            const btnTop = document.querySelector('.btn-top');
+
+            window.addEventListener('scroll', () => {
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                // Navbar Logic
+                if (scrollTop > lastScrollTop && scrollTop > navbarHeight) {
+                    navbarContainer.style.top = `-${navbarHeight}px`;
+                } else {
+                    navbarContainer.style.top = '0';
+                }
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; 
+
+                // Floating Top Logic (Muncul setelah scroll 300px)
+                if (scrollTop > 300) {
+                    btnTop.classList.add('show');
+                } else {
+                    btnTop.classList.remove('show');
+                }
+            });
+
+            // 3. Scroll to Top
+            btnTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
